@@ -22,7 +22,3 @@ def forecasting():
     return_str = '{ "next month prediction" : ' + str(output_value[0]) + ' }'
 
     return json.loads(return_str)
-
-
-if __name__ == '__main__':
-    app.run(host="192.168.1.3", port=8000, debug=True)
